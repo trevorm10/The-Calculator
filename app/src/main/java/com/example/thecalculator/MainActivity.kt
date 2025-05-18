@@ -50,7 +50,7 @@ fun CalculatorApp() {
         verticalArrangement = Arrangement.spacedBy(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Simple Calculator", fontSize = 24.sp)
+        Text("Simple Calculator", fontSize = 24.sp) // the name of the app
 
         OutlinedTextField(
             value = num1,
