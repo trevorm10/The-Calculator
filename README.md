@@ -1,17 +1,17 @@
 # The-Calculator
 # steps to follow when intializing a new branch
-git init
-git add .
-git commit -m 'write what you committed'
-git branch -M main
-git remote add origin <copy the repo URL here> example. https://github.com/trevorm10/The-Calculator.git
-git push -u origin main
+<p>git init /n
+git add . /n
+git commit -m 'write what you committed' /n
+git branch -M main /n
+git remote add origin <copy the repo URL here> example. https://github.com/trevorm10/The-Calculator.git /n
+git push -u origin main </p> 
 
 # this is switching to branch and committing
-git checkout -b secondleg
-git add .
-git commit -m 'write what you committed'
-git push -u origin secondleg
+<p>git checkout -b secondleg /n
+git add . /n
+git commit -m 'write what you committed' /n
+git push -u origin secondleg </p> 
 
 # this is switching to branch 
-git checkout main
+<p>git checkout main </p> 
