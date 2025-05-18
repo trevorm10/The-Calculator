@@ -19,7 +19,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -50,8 +56,20 @@ fun CalculatorApp() {
         verticalArrangement = Arrangement.spacedBy(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Simple Calculator", fontSize = 24.sp) // the name of the app
-
+        Text(
+            text = "The Calculator",
+            style = TextStyle(
+                color = Color.Black, // Black text color
+                fontSize = 48.sp,
+                fontWeight = FontWeight.Bold,
+                shadow = Shadow(
+                    color = Color.White, // Glow color
+                    offset = Offset(0f, 0f), // No offset
+                    blurRadius = 20f // Adjust blur radius for glow effect
+                )
+            ),
+            textAlign = TextAlign.Center // Center the text
+        )
         OutlinedTextField(
             value = num1,
             onValueChange = { num1 = it },
