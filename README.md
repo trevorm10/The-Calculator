@@ -40,7 +40,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-//The packing list screen
 @Composable
 fun PackingListApp() {
     val navController = rememberNavController()
@@ -61,7 +60,6 @@ fun PackingListApp() {
     }
 }
 
-//MAIN SCREEN 
 @Composable
 fun MainScreen(
     navController: NavHostController,
@@ -122,7 +120,6 @@ fun MainScreen(
     }
 }
 
-//SECOND SCREEN
 @Composable
 fun ListScreen(
     navController: NavHostController,
